@@ -13,11 +13,11 @@ public class HockeyRegistrarValidator {
 
     /**
      * A method that validates that players are eligible for a
-     * '10 and under' hockey club. In order to qualify, they must
-     * be over 9 but less than 10 by Dec 31 of the current year
+     * hockey club. In order to qualify, they must
+     * be over 16 but less than 20 by Dec 31 of the current year
      *
      * @param playerBirthYear, the player's year of birth
-     * @return true if the player will be over 9 but less than 10 
+     * @return true if the player will be over 16 but less than 20 
      * this year, false otherwise.
      */
     public boolean validateBirthYear(int playerBirthYear) {
@@ -28,6 +28,6 @@ public class HockeyRegistrarValidator {
         
         int playerAge = year - playerBirthYear;
         
-        return playerAge >= 9 && playerAge < 10;
+        return playerAge >= 16 && playerAge < 20;
     }
 }
